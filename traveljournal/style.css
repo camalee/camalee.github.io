@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(174, 214, 216);
+}
+.container{
+    width: 510px;
+    height: 510px;
+    justify-content: center;
+    border: 20px black solid;
+    margin-top: 30px;
+    
+
+}
+img{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+p{
+    font-size: 1rem;
+    font-style: italic;
+    white-space: nowrap;
+    text-align: center;
+}
+header{
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    white-space: nowrap;
+    margin: 50px 20% 25% 24px;
+    padding-top: 5rem;
+    
+}
+h1{
+    font-size: 4rem;
+}

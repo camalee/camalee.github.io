@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Travel Journal</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar Section-->
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">The Travel Journal</span>
+    </nav>
+    
+    <!--Image Container-->
+    <div class="row">
+        <div class="container">
+            <div class= " col-md-6 col- xs-4">
+                <header>
+                    <h1> Tulum Getaway</h1>
+                    <h2> By Camalee Cogle </h2>
+                    <h4> 500907306</h4>
+                    </header>
+            </div>
+        </div>
+        <div class="container">
+            <div class= " col-md-6 col- xs-8">
+                <img id="img1" src="img/yoga.jpg" width="400" height="400" alt="">
+            <p id="cap1">Namaste</p>
+            </div>
+            
+        </div>
+
+    </div>
+   
+
+    <!--Script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script>
+
+
+    $(function(){
+        // create new variable for array object
+        var newImage =new Array();
+        // Place images in an array
+        newImage[0]="img/iguana.jpg";
+        newImage[1]="img/monument.jpg";
+        newImage[2]="img/road.jpg";
+        newImage[3]="img/villa.jpg";
+
+       // create array for image array position
+        var imagePosition=0;
+
+        window.setInterval(function(){
+            $('#img1').attr('src',newImage[imagePosition]);
+            imagePosition++; //looping or increment
+            if (imagePosition==3) imagePosition=0; // if image reaches end of list repeat from start
+        },20000);// 20 seconds        
+    });
+</script>
+<script>
+    $(function(){
+        // create new variable for array object
+        var newCaption =new Array();
+        // Place captions in an array
+        newCaption[0]="Iguana are herbivores but very muscular creatures";
+        newCaption[1]="This was built in 300BC";
+        newCaption[2]="Chris and I biked all around the village evergy day";
+        newCaption[3]="This is where we stayed";
+
+       // create array for caption array position
+        var captionPosition=0;
+
+        window.setInterval(function(){
+            $('#cap1').text(newCaption[captionPosition]);
+            captionPosition++; //looping or increment
+            if (captionPosition==3) captionPosition=0; // if capton reaches end of list repeat from start
+        },20000);        
+    });
+  
+    </script>
+</body>
+
+</html>
