@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>Detangling brush</title>
+            <meta name="description" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!--Bootstrap CSS-->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <!--Background section-->
+            <div class="background-container">
+
+            </div>   
+            <!--Navbar-->
+            
+                <nav class="navbar navbar-trans navbar-expand-lg ">
+                    <a class="navbar-brand" href="#">Untangly&trade;</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                            </ul>
+                        </div>
+                </nav>
+        
+            
+            <!--Main section-->
+            <div class="container main">
+                <div class="row">
+                    <div class="col-6">
+                        <h3>$34.99</h3>
+                        <h1>Untangly&trade;<br>Detangling Brush</h1>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6 col-sm-12"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                    
+                            <div class="star-icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                                <p>Loosen those tangles with curly and coily hair types.Just simply add your favourite conditioner and dissolve those tangles</p>
+                                    <button id="click-button" type="button" class="btn btn-warning">ADD TO CART</button>
+                         </div>
+                            <div class="col-6">
+                                <img src="images/detanglingbrush.png" alt="brush">
+                            </div>
+                        
+                    
+                </div>
+            </div>  
+        
+        <!--Footer Section-->
+        <div class="footer-container">
+            <footer id="sticky-footer" class="py-4 bg-light ">
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f mx-2 "></i>
+                    <i class="fab fa-twitter mx-2 "></i>
+                    <i class="fab fa-youtube mx-2 "></i>
+                </div>
+                <div class="container text-center">
+                <small>Copyright &copy; www.untangly.com</small>
+                </div>
+            </footer>
+        </div> 
+        <!--JQuery-->     
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <script>
+                function ClickBtn(){
+                $(document).ready(function(){
+                    $("button").click(function(){
+                        alert("Added item to cart");
+                            console.log("Added item to cart")
+                    });
+                });    
+                }
+                ClickBtn();
+
+            </script>
+        </body>
+    </html>
