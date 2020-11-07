@@ -1,0 +1,38 @@
+.heading-container{
+    background-color: dodgerblue;
+    text-align: center;
+    margin: -1rem -33rem 3rem -29rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 5em;
+}
+
+
+body{
+    background-color: black;
+    color: blanchedalmond;
+}
+
+td {
+    border: 1px solid blanchedalmond;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 5px;  
+}
+.removeBorder{
+    border: none;
+}
+.picture-container{
+    display: flex;
+}
+.column{
+    width:43.3%;
+    float:left;
+    padding: 6px;
+    
+    
+}
